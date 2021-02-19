@@ -1,0 +1,65 @@
+.projects {
+  width: 70%;
+  position: relative;
+  h5 {
+    margin-bottom: 30px;
+  }
+
+  &::before {
+    top: 100px;
+  }
+  &::after {
+    top: 250px;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: #dd4839;
+    right: -150px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.bricks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+}
+
+.brick {
+  font-size: 1.4rem;
+  padding-right: 20px;
+  margin: 20px 20px 20px 0;
+  max-width: 220px;
+
+  a {
+    font-size: 1rem;
+    padding: 2px 10px;
+    float: right;
+    color: #e8e8db;
+    background-color: #3c3c3c;
+    border-radius: 10px;
+    cursor: pointer;
+
+    &:hover {
+      //   color: #3c3c3c;
+      background-color: #dd4839;
+    }
+  }
+
+  img {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  h6 {
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,42 @@
+.heroWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: Calc(100vh - 50px);
+}
+
+.hero {
+  width: 70%;
+  // text-align: center;
+
+  h2 {
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 4rem;
+    //   text-align: left;
+  }
+  h4 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    //   text-align: left;
+  }
+  hr {
+    width: 70%;
+    margin: 50px 0;
+  }
+  p {
+    font-size: 1.6rem;
+    //   margin-top: 50px;
+  }
+}
+
+@media (min-width: 880px) {
+  .hero h2 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  .hero h4 {
+    font-size: 3.2rem;
+  }
+}

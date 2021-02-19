@@ -1,0 +1,76 @@
+.footer,
+.container {
+  width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  position: relative;
+  border-radius: 15px;
+  margin-top: 50px;
+  background: url("./../../public/background-pattern.jpg");
+  -webkit-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.2);
+
+  &::before {
+    top: 10px;
+  }
+  &::after {
+    top: 60px;
+  }
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: #dd4839;
+    // top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    -webkit-box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0px 0px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.footer {
+  color: rgb(250, 248, 229);
+  display: flex;
+  padding: 10px 0px;
+  justify-content: space-between;
+}
+
+@media (min-width: 680px) {
+  .footer,
+  .container {
+    width: 500px;
+  }
+}
+@media (min-width: 880px) {
+  .footer,
+  .container {
+    width: 700px;
+  }
+}
+@media (min-width: 1080px) {
+  .footer,
+  .container {
+    width: 900px;
+  }
+}
+@media (min-width: 1180px) {
+  .footer,
+  .container {
+    width: 1080px;
+  }
+}
+@media (min-width: 1380px) {
+  .footer,
+  .container {
+    width: 1180px;
+  }
+}
